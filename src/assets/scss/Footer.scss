@@ -1,0 +1,15 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(1, 1, 1, 0.3);
+    color: #edebd7;;
+}
+
+.footer-a {
+    font-size: 20px;
+    padding: 1%;
+}
+
+.footer-a:hover {
+    color: #a2ac6e;
+}
