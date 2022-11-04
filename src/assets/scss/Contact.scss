@@ -61,6 +61,10 @@
     cursor: not-allowed;
 }
 
+#mailto {
+    opacity: 0;
+}
+
 @media (min-width: 768px) {
 
     .legend {

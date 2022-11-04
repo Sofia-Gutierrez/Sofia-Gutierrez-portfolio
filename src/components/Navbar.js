@@ -20,7 +20,6 @@ const Navbar = () => {
                         <li className="nav-li"><a className="link" href="/#works">Proyectos</a></li>
                         <li className="nav-li"><a className="link" href="/#about">Sobre mi</a></li>
                         <li className="nav-li"><a className="link" href="/#contact">Contacto</a></li>
-                        <li className="nav-li"><a className="link-i" href="/#"><i className="fa-solid fa-moon"></i></a></li>
                     </ul>
                 </div>
             </nav>

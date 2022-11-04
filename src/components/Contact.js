@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react"
+import emailjs from "emailjs-com"
 import AOS from 'aos';
 import "../assets/scss/Contact.scss"
 
@@ -17,7 +18,6 @@ const Contact = () => {
     msgMessage: ""
   });
 
-  const btn = document.getElementById("btn-contact");
 
   useEffect(() => {
 
@@ -28,6 +28,8 @@ const Contact = () => {
     let name = document.getElementById("name");
     let email = document.getElementById("email");
     let message = document.getElementById("message");
+
+    const btn = document.getElementById("btn-contact");
 
     if(name.value.length >= 4 && email.value.length >= 4 && message.value.length >= 4) {
       btn.classList.remove("btn-contact-err");
@@ -41,6 +43,8 @@ const Contact = () => {
 
     let name = e.target.value
     let msgName = "" 
+
+    const btn = document.getElementById("btn-contact");
 
     if(name.length < 4) {
       msgName = "Ingrese su Nombre";
@@ -60,6 +64,8 @@ const Contact = () => {
 
     let email = e.target.value;
     let msgEmail = "";
+
+    const btn = document.getElementById("btn-contact");
 
     let emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
 
@@ -86,6 +92,8 @@ const Contact = () => {
     let message = e.target.value;
     let msgMessage = "";
 
+    const btn = document.getElementById("btn-contact");
+
     if(message.length <= 10 ) {
       msgMessage = "Deje su mensaje";
       btn.classList.add("btn-contact-err");
@@ -96,13 +104,30 @@ const Contact = () => {
     setMessage(currentValue => ({
       ...currentValue,
       message: message,
-       msgMessage: msgMessage
+      msgMessage: msgMessage
     }))
-
   }
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    let okMsg = document.getElementById("okMsg")
+
+    
+    emailjs.sendForm('portfolio-gs', 'template_xx5pbps', e.target, 'JrCDstaDLUt_54uRl')
+    .then((result) => {
+      console.log(result.text);
+      document.getElementById("okMsg").innerText = "El correo fue enviado!"
+      }, (error) => {
+          console.log(error.text);
+          document.getElementById("okMsg").innerText = "Ocurrio un error al enviar el correo."
+      });
+      e.target.reset()
+  };
+
         return(
-            <form className="contact-form" id="contact" data-aos="zoom-in">
-              <legend className="legend">Contactame: </legend>
+            <form  onSubmit={sendEmail} className="contact-form" action="https://formsubmit.co/sofiagutierrez1845@gmail.com" method="POST" id="contact" data-aos="zoom-in">
+              <legend className="legend">Contactame: <span id="okMsg"></span></legend>
               <label className="contact-label" form="name">Nombre:<span id="err-name">{name.msgName}</span></label>
               <input className="contact-input" type="text" name="name" id="name" onBlur={handleOnBlurName} placeholder="Nombre*"/>
               <label className="contact-label" form="email">Correo:<span id="err-email">{email.msgEmail}</span></label>
