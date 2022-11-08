@@ -31,7 +31,7 @@ const Contact = () => {
 
     const btn = document.getElementById("btn-contact");
 
-    if(name.value.length >= 4 && email.value.length >= 4 && message.value.length >= 4) {
+    if(name.value.length >= 4 && email.value.length >= 4 && message.value.length >= 10) {
       btn.classList.remove("btn-contact-err");
       btn.classList.add("btn-contact");
       btn.disabled = false

@@ -5,19 +5,20 @@ import Content from "./components/Content";
 import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import { BrowserRouter, Router } from "react-router-dom";
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <Navbar />
-      <Cover />
-      <Content />
-      <div className="about">
-        <AboutMe />
-        <Contact />
-      </div>
+        <Cover />
+        <Content />
+        <div className="about">
+          <AboutMe />
+          <Contact />
+        </div>
       <Footer />
-    </div>
+    </BrowserRouter>
   );
 }
 

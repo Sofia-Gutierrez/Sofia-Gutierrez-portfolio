@@ -15,7 +15,7 @@ const Content = () => {
         return(
             <div className="works-container" id="works"> 
                 <div className="work-container img-r" data-aos="fade-right"> 
-                    <a className="work-link" href="/#">
+                    <a className="work-link" >
                         <img className="work-img" src={travel} alt="travel work"/>
                         <div className="work-detail">
                             <h4 className="work-title">Medellin Travel</h4>
@@ -24,8 +24,8 @@ const Content = () => {
                         </div>
                     </a>
                 </div>
-                <div className="work-container img-l" data-aos="fade-left">
-                    <a className="work-link" href="/#">
+                <div className="work-container img-l" data-aos="fade-right">
+                    <a className="work-link" >
                         <img className="work-img" src={museum} alt="museum work"/>
                         <div className="work-detail">
                             <h4 className="work-title">Museo Paleontologico</h4>
