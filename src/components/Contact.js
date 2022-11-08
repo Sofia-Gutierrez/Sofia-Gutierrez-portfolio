@@ -110,9 +110,6 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
-    let okMsg = document.getElementById("okMsg")
-
     
     emailjs.sendForm('portfolio-gs', 'template_xx5pbps', e.target, 'JrCDstaDLUt_54uRl')
     .then((result) => {
