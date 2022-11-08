@@ -11,7 +11,7 @@
 }
 
 .work-container .work-img{
-    width: 360px;
+    width: 300px;
     border: 1px solid #edebd7;
 }
 
@@ -21,6 +21,12 @@
 
 .work-title {
     color:#edebd7
+}
+
+@media (min-width:425px) {
+    .work-container .work-img{
+        width: 360px;
+    }
 }
 
 
