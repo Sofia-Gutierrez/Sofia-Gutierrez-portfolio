@@ -16,10 +16,10 @@ const Navbar = () => {
                 <label for="toggler"><i className="fa-solid fa-bars"></i></label>
                 <div className="nav-content">
                     <ul className="nav-links">
-                        <li className="nav-li"><a className="link-i" href="/#home"><i className="fa-solid fa-house"></i></a></li>
-                        <li className="nav-li"><a className="link" href="/#works">Proyectos</a></li>
-                        <li className="nav-li"><a className="link" href="/#about">Sobre mi</a></li>
-                        <li className="nav-li"><a className="link" href="/#contact">Contacto</a></li>
+                        <li className="nav-li"><a className="link-i" href="/#home" basename={process.env.PUBLIC_URL}><i className="fa-solid fa-house"></i></a></li>
+                        <li className="nav-li"><a className="link" href="/#works" basename={process.env.PUBLIC_URL}>Proyectos</a></li>
+                        <li className="nav-li"><a className="link" href="/#about" basename={process.env.PUBLIC_URL}>Sobre mi</a></li>
+                        <li className="nav-li"><a className="link" href="/#contact" basename={process.env.PUBLIC_URL}>Contacto</a></li>
                     </ul>
                 </div>
             </nav>
