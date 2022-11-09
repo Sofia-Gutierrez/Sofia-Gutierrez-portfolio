@@ -1,15 +1,27 @@
 .footer {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     background-color: rgba(1, 1, 1, 0.3);
     color: #edebd7;;
 }
 
-.footer-a {
+.footer-a , .footer-gm {
     font-size: 20px;
     padding: 1%;
 }
 
-.footer-a:hover {
+.footer-a:hover  {
     color: #a2ac6e;
+    cursor: pointer;
+}
+
+
+@media (min-width: 768px) {
+    .footer {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
 }

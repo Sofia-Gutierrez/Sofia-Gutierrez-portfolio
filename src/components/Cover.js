@@ -22,7 +22,7 @@ const Cover = () => {
                     <li><a target="_blank" rel="noreferrer" href="https://github.com/Sofia-Gutierrez"><i className="fa-brands fa-github"></i></a></li>
                     <li><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/sofia-g-gutierrez/"><i className="fa-brands fa-linkedin"></i></a></li>
                 </ul>
-                <a href="/#works"><i className="fa-solid fa-arrow-down"></i></a>    
+                <a href="./#works"><i className="fa-solid fa-arrow-down"></i></a>    
             </div>
         )
 }

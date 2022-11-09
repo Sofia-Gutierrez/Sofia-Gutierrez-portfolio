@@ -30,7 +30,7 @@ const Content = () => {
                         <div className="work-detail">
                             <h4 className="work-title">Museo Paleontologico</h4>
                             <p className="work-description">
-                                    Texto de ejemplo
+                                    Trabajo realizado con HTML, SASS y JS.. Realice el frontend para el footer, las paginas de "Visita al campo" y "Recorrida del Museo"
                             </p>
                         </div>
                     </a>
@@ -41,7 +41,7 @@ const Content = () => {
                         <div className="work-detail">
                             <h4 className="work-title">Mercado Liebre</h4>
                             <p className="work-description">
-                                    Proyecto realizado en Digital House con HTML y CSS.
+                                    Proyecto realizado en Digital House con HTML y CSS para trabajar el frontend, aplicando buenas practicas para hacer un sitio responsive, con Mobile First. Es un e-commerce partiendo de Mercado Libre como ejemplo.
                             </p>
                         </div>
                     </a>
