@@ -1,10 +1,13 @@
 .footer {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     background-color: rgba(1, 1, 1, 0.3);
-    color: #edebd7;;
+    color: #edebd7;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-a , .footer-gm {
@@ -17,9 +20,14 @@
     cursor: pointer;
 }
 
+.footer h6 {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
 
 @media (min-width: 768px) {
-    .footer {
+    .footer-links {
         flex-direction: row;
         justify-content: center;
     }
