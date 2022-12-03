@@ -94,11 +94,11 @@
     }
 
     .work-title {
-        font-size: 30px;
+        font-size: 38px;
     }
 
     .work-description {
-        font-size: 24px;
+        font-size: 26px;
     }
 
     .img-r {
@@ -116,8 +116,8 @@
 }
 
 @keyframes transition-title {
-    0% { top: -10%; left: 40%; color: rgba(0, 0, 0, 0.0); }
-     100% { top: 30%; left: 40%; color:#edebd7; }
+    0% { top: -10%; left: 2%; color: rgba(0, 0, 0, 0.0); }
+     100% { top: 30%; left: 2%; color:#edebd7; }
  }
 
 @keyframes transition-detail {

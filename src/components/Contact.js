@@ -123,6 +123,7 @@ const Contact = () => {
   };
 
         return(
+          <div className="form-container">
             <form  onSubmit={sendEmail} className="contact-form" action="https://formsubmit.co/sofiagutierrez1845@gmail.com" method="POST" id="contact" data-aos="zoom-in">
               <legend className="legend">Contactame: <span id="okMsg"></span></legend>
               <label className="contact-label" form="name">Nombre:<span id="err-name">{name.msgName}</span></label>
@@ -133,6 +134,7 @@ const Contact = () => {
               <textarea className="contact-input" type="text" name="message" id="message" onBlur={handleOnBlurMessage}  placeholder="Mensaje*"/>
               <button className="btn-contact-err" id="btn-contact" disabled={true}>Enviar</button>
             </form>
+          </div>
         )
 }
 

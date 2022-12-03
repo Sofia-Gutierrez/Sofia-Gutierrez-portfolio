@@ -18,7 +18,7 @@ const Content = () => {
                     <a className="work-link" href="./#home">
                         <img className="work-img" src={travel} alt="travel work"/>
                         <div className="work-detail">
-                            <h4 className="work-title">Medellin Travel</h4>
+                            <h4 className="work-title">Medellín Travel:</h4>
                             <p className="work-description">Desde nuestro sitio web ofrecemos servicios de transporte para personas recién llegados a Medellín, Colombia.
                             Nuestro principal objetivo es que las personas que nos elijan se sientan cómodas desde que bajan del avión hasta que vuelven a su destino.</p>
                         </div>
@@ -28,9 +28,9 @@ const Content = () => {
                     <a className="work-link" href="./#home">
                         <img className="work-img" src={museum} alt="museum work"/>
                         <div className="work-detail">
-                            <h4 className="work-title">Museo Paleontologico</h4>
+                            <h4 className="work-title">Museo Paleontológico:</h4>
                             <p className="work-description">
-                                    Trabajo realizado con HTML, SASS y JS.. Realice el frontend para el footer, las paginas de "Visita al campo" y "Recorrida del Museo"
+                                    Trabajo realizado con HTML <i className="fa-brands fa-html5"></i>, SASS y JS <i className="fa-brands fa-js"></i>.. Realice el frontend para el footer, las paginas de "Visita al campo" y "Recorrida del Museo"
                             </p>
                         </div>
                     </a>
@@ -39,9 +39,9 @@ const Content = () => {
                     <a className="work-link" target="_blank" rel="noreferrer" href="https://sofiag-mercadoliebre.herokuapp.com/">
                         <img className="work-img" src={mercadoLiebre} alt="mercadoLiebre work"/>
                         <div className="work-detail">
-                            <h4 className="work-title">Mercado Liebre</h4>
+                            <h4 className="work-title">Mercado Liebre:</h4>
                             <p className="work-description">
-                                    Proyecto realizado en Digital House con HTML y CSS para trabajar el frontend, aplicando buenas practicas para hacer un sitio responsive, con Mobile First. Es un e-commerce partiendo de Mercado Libre como ejemplo.
+                                    Proyecto realizado en Digital House con HTML <i className="fa-brands fa-html5"></i> y CSS <i className="fa-brands fa-css3-alt"></i> para trabajar el frontend, aplicando buenas practicas para hacer un sitio responsive, con Mobile First. Es un e-commerce partiendo de Mercado Libre como ejemplo.
                             </p>
                         </div>
                     </a>

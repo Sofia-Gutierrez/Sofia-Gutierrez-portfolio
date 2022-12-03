@@ -1,6 +1,5 @@
 import React, { useEffect } from "react"
 import AOS from 'aos';
-import video from "../assets/video/tree.mp4"
 import "../assets/scss/Cover.scss"
 
 const Cover = () => {
@@ -13,7 +12,6 @@ const Cover = () => {
 
         return(
             <div className="cover-container" id="home">
-                <video src={video} loop autoPlay muted className="video"></video>
                 <div className="content" data-aos="fade-down">
                     <h1 className="name">Sofia Gutierrez</h1>
                     <p className="title">Desarrolladora Web Full Stack</p>
