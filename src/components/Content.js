@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import AOS from 'aos';
+import useAos from "../hooks/useAos";
 import travel from "../assets/img/medellinTravel.jpg"
 import museum from "../assets/img/museum.jpg"
 import mercadoLiebre from "../assets/img/mercadoLiebre.jpg"
@@ -7,11 +6,8 @@ import "../assets/scss/Content.scss"
 
 const Content = () => {
 
-    useEffect(() => {
-        AOS.init({
-            duration : 2000
-        });
-    })
+    useAos();
+
         return(
             <div className="works-container" id="works"> 
                 <div className="work-container img-r" data-aos="fade-right"> 

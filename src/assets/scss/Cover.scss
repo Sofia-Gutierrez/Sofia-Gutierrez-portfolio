@@ -4,18 +4,32 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: white;
+    color: rgb(26, 33, 41);
+    background-image: url("../img/laptop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.cover-container::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,  rgb(26, 33, 41), transparent);
+    z-index: 10;
 }
 
 /*Background video */
 
-.video {
-    object-fit: cover;
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    z-index: -1;
-}
+// .video {
+//     object-fit: cover;
+//     width: 100%;
+//     height: 100vh;
+//     position: fixed;
+//     z-index: -100;
+// }
 
 .content {
     margin-left: 5%;
@@ -31,7 +45,7 @@
     white-space: nowrap;
     border-right: 4px solid;
     width: 29ch;
-    color: #edebd7;
+    color: rgb(0, 17, 36);
     font-size: 14px;
 
     animation: typing 2s steps(29), 
@@ -63,6 +77,7 @@
     left: 50%;
     font-size: 24px;
     padding-bottom: 10px;
+    z-index: 20;
 }
 
 .fa-arrow-down:hover {

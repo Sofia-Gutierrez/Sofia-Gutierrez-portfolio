@@ -1,15 +1,10 @@
-import React, { useEffect } from "react"
-import AOS from 'aos';
+import useAos from "../hooks/useAos";
 import "../assets/scss/Navbar.scss"
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
 
-    useEffect(() => {
-        AOS.init({
-            duration : 2000
-        });
-    })
+    useAos();
 
         return(
             <nav className="nav" data-aos="fade-down">  

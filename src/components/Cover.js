@@ -1,14 +1,10 @@
-import React, { useEffect } from "react"
-import AOS from 'aos';
-import "../assets/scss/Cover.scss"
+import useAos from "../hooks/useAos";
+import video from "../assets/video/tree.mp4"
+import "../assets/scss/Cover.scss";
 
 const Cover = () => {
 
-    useEffect(() => {
-        AOS.init({
-            duration : 2000
-        });
-    })
+    useAos();
 
         return(
             <div className="cover-container" id="home">
@@ -20,7 +16,6 @@ const Cover = () => {
                     <li><a target="_blank" rel="noreferrer" href="https://github.com/Sofia-Gutierrez"><i className="fa-brands fa-github"></i></a></li>
                     <li><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/sofia-g-gutierrez/"><i className="fa-brands fa-linkedin"></i></a></li>
                 </ul>
-                <a href="./#works"><i className="fa-solid fa-arrow-down"></i></a>    
             </div>
         )
 }

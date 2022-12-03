@@ -1,14 +1,9 @@
-import React, { useEffect } from "react"
-import AOS from 'aos';
 import "../assets/scss/AboutMe.scss"
+import useAos from "../hooks/useAos";
 
 const AboutMe = () => {
 
-    useEffect(() => {
-        AOS.init({
-            duration : 2000
-        });
-    })
+    useAos();
 
         return(
                 <div id="about" data-aos="zoom-in" className="about">

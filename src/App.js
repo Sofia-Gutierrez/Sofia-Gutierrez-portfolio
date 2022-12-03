@@ -1,26 +1,24 @@
 import "./assets/scss/App.scss";
-import video from "./assets/video/tree.mp4"
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
-import Content  from "./components/Content";
+import Content from "./components/Content";
 import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
+import { HashRouter , Route , Routes } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Navbar />
-      <video src={video} loop autoPlay muted className="video"></video>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/works" element={<Content/>} />
-        <Route path="/contact" element={<Contact/>} />
-        <Route path="about" element={<AboutMe/>} />
+        <Route path="/" exact={true} basename={process.env.PUBLIC_URL} element={<Home />} />
+        <Route path="/works" basename={process.env.PUBLIC_URL} element={<Content/>} />
+        <Route path="/contact" basename={process.env.PUBLIC_URL} element={<Contact/>} />
+        <Route path="/about" basename={process.env.PUBLIC_URL} element={<AboutMe/>} />
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
