@@ -11,16 +11,6 @@
     background-attachment: fixed;
 }
 
-.cover-container::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(to top,  rgb(26, 33, 41), transparent);
-    z-index: 10;
-}
-
 /*Background video */
 
 // .video {
@@ -86,6 +76,16 @@
 }
 
 @media (min-width: 720px) {
+
+    .cover-container::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        background: linear-gradient(to top,  rgb(26, 33, 41), transparent);
+        z-index: 10;
+    }
 
     .content {
         margin-left: 20%;

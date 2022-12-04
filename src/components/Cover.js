@@ -1,5 +1,4 @@
 import useAos from "../hooks/useAos";
-import video from "../assets/video/tree.mp4"
 import "../assets/scss/Cover.scss";
 
 const Cover = () => {

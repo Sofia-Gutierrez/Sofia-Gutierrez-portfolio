@@ -24,6 +24,15 @@
     color:#edebd7
 }
 
+.works-title {
+    color: white;
+    text-align: center;
+}
+
+.works-1000 {
+    display: none;
+}
+
 @media (min-width:425px) {
     .work-container .work-img{
         width: 360px;
@@ -32,104 +41,23 @@
 
 @media (min-width: 768px) {
 
-    .work-container .work-img{
-        width: 700px;
-        box-shadow: 10px 10px 10px 0 white;
+    .carousel-caption {
+        color: white;
+        background-color: #00000075;
     }
-    .works-container {
-        height: 100%;
-    }
-}
 
-@media (min-width: 1020px) {
-
-    .work-container .work-img{
-        width: 700px;
-    }
-    
-    .work-detail {
+    .works-300 {
         display: none;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 700px;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.0);
-        transition-property: background-color;
-        transition-duration: 1s;
-        transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     }
-
-    .work-title {
-        animation-name: transition-title;
-        font-size: 26px;
-    }
-
-    .work-description {
-        font-size: 18px;
-        animation-name: transition-detail;
+    .works-1000 {
         display: block;
     }
 
-    .work-title, .work-description {
-        position: absolute;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-    }
-
-    .work-container:hover .work-detail {
-        display: block;
-    }
-
-    .work-detail:hover {
-        background-color: rgba(0, 0, 0, 0.7);
-        cursor: pointer;
-    }
-
 }
 
-@media (min-width: 1020px) {
-    .works-container {
-        padding: 5% 0 5% 0;
+@media (min-width: 1920px) {
+    .carousel-img {
+        height: 734px ;
+        width: 1437px;
     }
-    
-}
-
-@media (min-width: 1440px) {
-
-    .work-container .work-img{
-        width: 1036px;
-    }
-
-    .work-title {
-        font-size: 38px;
-    }
-
-    .work-description {
-        font-size: 26px;
-    }
-
-    .img-r {
-        margin-right: 150px;
-    }
-    
-    .img-l {
-        margin-left: 150px;
-    }
-
-    .work-detail {
-        width: 1036px;
-    }
-
-}
-
-@keyframes transition-title {
-    0% { top: -10%; left: 2%; color: rgba(0, 0, 0, 0.0); }
-     100% { top: 30%; left: 2%; color:#edebd7; }
- }
-
-@keyframes transition-detail {
-   0% { top: 100%; left: 2%; color: rgba(0, 0, 0, 0.0); }
-    100% { top: 45%; left: 2%; color:#edebd7; }
 }

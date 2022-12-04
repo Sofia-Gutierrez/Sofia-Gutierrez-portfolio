@@ -12,10 +12,10 @@ const Navbar = () => {
                 <label for="toggler"><i className="fa-solid fa-bars"></i></label>
                 <div className="nav-content">
                     <ul className="nav-links">
-                        <li className="nav-li"><Link className="link-i" to="/"><i className="fa-solid fa-house"></i></Link></li>
-                        <li className="nav-li"><Link className="link" to="/works">Proyectos</Link></li>
-                        <li className="nav-li"><Link className="link" to="/about">Sobre mi</Link></li>
-                        <li className="nav-li"><Link className="link" to="/contact">Contacto</Link></li>
+                        <li className="nav-li"><a className="link-i" href="./#home"><i className="fa-solid fa-house"></i></a></li>
+                        <li className="nav-li"><a className="link" href="./#works">Proyectos</a></li>
+                        <li className="nav-li"><a className="link" href="#about">Sobre mi</a></li>
+                        <li className="nav-li"><a className="link" href="./#contact">Contacto</a></li>
                     </ul>
                 </div>
             </nav>

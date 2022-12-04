@@ -6,7 +6,7 @@ const AboutMe = () => {
     useAos();
 
         return(
-                <div id="about" data-aos="zoom-in" className="about">
+                <div id="about" name="about" data-aos="zoom-in" className="about">
                     <p className="about-p">
                         Soy Sofia Gutierrez, tengo 18 años y me apasiona el mundo de la tecnologia.
                         <br/>
