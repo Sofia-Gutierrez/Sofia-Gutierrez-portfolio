@@ -11,16 +11,6 @@
     background-attachment: fixed;
 }
 
-.cover-container::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(to top,  rgb(26, 33, 41), transparent);
-    z-index: 10;
-}
-
 /*Background video */
 
 // .video {
@@ -62,7 +52,7 @@
 }
 
 .links-container i {
-    color: #edebd7;
+    color: rgb(0, 17, 36);
     font-size: 30px;
     padding: 5px 0;
 }
@@ -87,6 +77,16 @@
 
 @media (min-width: 720px) {
 
+    .cover-container::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        background: linear-gradient(to top,  rgb(26, 33, 41), transparent);
+        z-index: 10;
+    }
+
     .content {
         margin-left: 20%;
     }
@@ -97,6 +97,10 @@
     
     .title {
         font-size: 18px;
+    }
+
+    .links-container i {
+        color: #edebd7;
     }
 }
 
