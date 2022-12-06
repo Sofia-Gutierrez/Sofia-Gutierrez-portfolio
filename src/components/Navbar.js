@@ -13,7 +13,6 @@ const Navbar = () => {
                 <div className="nav-content">
                     <ul className="nav-links">
                         <li className="nav-li"><Link className="link-i" to="/"><i className="fa-solid fa-house"></i></Link></li>
-                        <li className="nav-li"><Link className="link" to="/works">Proyectos</Link></li>
                         <li className="nav-li"><Link className="link" to="/about">Sobre mi</Link></li>
                         <li className="nav-li"><Link className="link" to="/contact">Contacto</Link></li>
                     </ul>

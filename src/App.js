@@ -1,4 +1,6 @@
 import "./assets/scss/App.scss";
+import { useEffect } from "react";
+import Particles from "particlesjs";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Content from "./components/Content";
@@ -8,6 +10,43 @@ import Footer from "./components/Footer";
 import { HashRouter , Route , Routes } from "react-router-dom";
 
 function App() {
+
+  useEffect(() => {
+    Particles.init({
+      selector: '.background',
+      speed: 0.1,
+      responsive: [
+        {
+          breakpoint: 1920, 
+            options: {
+              maxParticles: 150,
+              connectParticles: true
+            }
+        },
+        {
+          breakpoint: 768, 
+            options: {
+              maxParticles: 50,
+              connectParticles: true
+            }
+        }, 
+        {
+          breakpoint: 425,
+          options: {
+            maxParticles: 10,
+            connectParticles: false
+          }
+        }, 
+        {
+          breakpoint: 320,
+          options: {
+            maxParticles: 0
+          }
+        }
+      ]
+    });
+  });
+
   return (
     <HashRouter>
       <Navbar />

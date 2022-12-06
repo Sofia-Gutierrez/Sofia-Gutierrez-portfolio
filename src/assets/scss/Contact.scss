@@ -3,6 +3,8 @@
     align-items: center;
     justify-content: center;
     height: 91.6vh;
+    position: relative;
+    z-index: 90;
 }
 
 .contact-form {

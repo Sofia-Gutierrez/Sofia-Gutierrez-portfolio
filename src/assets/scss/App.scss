@@ -15,6 +15,12 @@ a {
 }
 
 body {
-    background: linear-gradient(to bottom, rgb(26, 33, 41), rgba(15,18,40,1));
+    background: linear-gradient(to bottom,  #cac8b0, #a2ac6e);
 }
 
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }

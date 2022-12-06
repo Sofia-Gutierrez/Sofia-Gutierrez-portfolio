@@ -8,6 +8,7 @@
 .work-container {
     margin: 2% 0;
     position: relative;
+    z-index: 90;
 }
 
 .work-container .work-img{
@@ -33,7 +34,7 @@
 
     .work-container .work-img{
         width: 700px;
-        box-shadow: 10px 10px 10px 0 white;
+        box-shadow: 10px 10px 10px 0 rgb(0, 0, 0);
     }
     .works-container {
         height: 100%;
