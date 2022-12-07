@@ -24,6 +24,10 @@
     font-size: 18px;
 }
 
+.contact-label {
+    padding-left: 2%;
+}
+
 .contact-label span {
     color: rgb(167, 0, 0);
     padding-left: 5px;
@@ -31,7 +35,7 @@
 
 .contact-input {
     all: unset;
-    width: 100%;
+    width: 90%;
     padding: 10px;
     border-radius: 5px;
     margin: 2px 0 15px 0;
@@ -88,9 +92,24 @@
     .contact-input {
         font-size: 18px;
     }
+
+    .contact-label {
+        padding-left: 4%;
+    }
 }
 
 @media (min-width: 1020px) {
+
+    .contact-input {
+        width: 100%;
+    }
+
+    .contact-label {
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 1440px) {
     .contact-form {
         width: 50%;
     }
