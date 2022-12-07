@@ -17,9 +17,9 @@ function App() {
       speed: 0.1,
       responsive: [
         {
-          breakpoint: 1920, 
+          breakpoint: 2560, 
             options: {
-              maxParticles: 150,
+              maxParticles: 100,
               connectParticles: true
             }
         },
@@ -27,7 +27,6 @@ function App() {
           breakpoint: 768, 
             options: {
               maxParticles: 50,
-              connectParticles: true
             }
         }, 
         {
