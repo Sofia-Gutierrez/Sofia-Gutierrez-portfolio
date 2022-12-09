@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import emailjs from "emailjs-com"
 import AOS from 'aos';
 import "../assets/scss/Contact.scss"
+import AboutMe from "./AboutMe";
 
 const Contact = () => {
 
