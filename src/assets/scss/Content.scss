@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10% 0 15% 0;
+    padding: 25% 0 15% 0;
 }
 
 .work-container {
@@ -42,6 +42,10 @@
 }
 
 @media (min-width: 1020px) {
+
+    .works-container {
+        padding: 10% 0 15%;
+    }
 
     .work-container .work-img{
         width: 700px;
@@ -89,14 +93,11 @@
 
 }
 
-@media (min-width: 1020px) {
-    .works-container {
-        padding: 5% 0 5% 0;
-    }
-    
-}
-
 @media (min-width: 1440px) {
+
+    .works-container {
+        padding: 5% 0 5%;
+    }
 
     .work-container .work-img{
         width: 1036px;
