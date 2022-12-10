@@ -13,7 +13,7 @@
 
 .work-container .work-img{
     width: 300px;
-    border: 1px solid #a2ac6e;
+    border: 1px solid var(--green);
 }
 
 .work-description {
@@ -21,7 +21,7 @@
 }
 
 .work-title {
-    color:#edebd7;
+    color:var(--wheat);
 }
 
 @media (min-width:425px) {
@@ -126,10 +126,10 @@
 
 @keyframes transition-title {
     0% { top: -10%; left: 2%; color: rgba(0, 0, 0, 0.0); }
-     100% { top: 30%; left: 2%; color:#edebd7; }
+     100% { top: 30%; left: 2%; color:var(--wheat); }
  }
 
 @keyframes transition-detail {
    0% { top: 100%; left: 2%; color: rgba(0, 0, 0, 0.0); }
-    100% { top: 45%; left: 2%; color:#edebd7; }
+    100% { top: 45%; left: 2%; color:var(--wheat); }
 }

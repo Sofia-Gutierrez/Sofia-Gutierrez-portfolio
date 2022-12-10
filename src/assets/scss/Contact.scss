@@ -15,7 +15,7 @@
     height: fit-content;
     padding: 2%;
     border-radius: 10px;
-    color: #edebd7;
+    color: var(--wheat);
     background-color: rgba(0, 0, 0, 0.3);
     box-shadow: 10px 10px 10px 0 black;
 }
@@ -39,18 +39,18 @@
     padding: 10px;
     border-radius: 5px;
     margin: 2px 0 15px 0;
-    border-bottom: 2px solid #edebd7;
+    border-bottom: 2px solid var(--wheat);
     font-size: 18px;
     background-color: rgba(0, 0, 0, 0.5);
-    color: #edebd7;
+    color: var(--wheat);
 }
 
 .contact-input:hover {
-    border-bottom: 2px solid #a2ac6e;
+    border-bottom: 2px solid var(--green);
 }
 
 .contact-input:focus {
-    border-bottom: 2px solid #a2ac6e;
+    border-bottom: 2px solid var(--green);
 }
 
 .contact-label {
@@ -62,12 +62,12 @@
     border-radius: 5px;
     padding: 10px;
     color: black;
-    background-color: #edebd7;
+    background-color: var(--wheat);
 }
 
 .btn-contact:hover {
     cursor: pointer;
-    background-color: #a2ac6e;
+    background-color: var(--green);
 }
 
 .btn-contact-err {

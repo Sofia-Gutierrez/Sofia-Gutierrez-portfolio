@@ -59,18 +59,14 @@
     }
 
     .link:hover {
-        color: #edebd7;
-        border-bottom: 1px solid #dadbbc;
+        color: var(--blue);
+        border-bottom: 1px solid var(--blue);
         cursor: pointer;
-        font-size: 14px;
-        padding: 4.1px;
     }
 
     .link-i:hover {
-        color: #edebd7;
-        border-bottom: 1px solid #dadbbc;
-        font-size: 14px;
-        padding: 1.2px;
+        color: var(--blue);
+        border-bottom: 1px solid var(--blue);
         cursor: pointer;
     }
 
@@ -81,13 +77,6 @@
     .nav {
         padding: 30px;
         font-size: 20px;
-    }
-
-    .link:hover {
-        font-size: 18px;
-    }
-    .link-i:hover {
-        font-size: 18px;
     }
 
 }

@@ -21,6 +21,10 @@ a {
 
 body {
     background: linear-gradient(to bottom,  #cac8b0, #a2ac6e);
+    background-image: url("../img/workspace.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .background {
@@ -34,6 +38,8 @@ body {
 }
 
 :root {
-    --button: pink;
-    --text: #edebd7;
+    --green: #a2ac6e;
+    --green-light: #cac8b0;
+    --wheat: #edebd7;
+    --blue: #001736;
   }

@@ -38,7 +38,7 @@
     white-space: nowrap;
     border-right: 4px solid;
     width: 29ch;
-    color: rgb(0, 17, 36);
+    color: var(--blue);
     font-size: 14px;
 
     animation: typing 2s steps(29), 
@@ -56,28 +56,75 @@
 }
 
 .links-container i {
-    color: rgb(0, 17, 36);
+    color: var(--blue);
     font-size: 30px;
     padding: 5px 0;
 }
 
 .links-container i:hover {
-    color: #a2ac6e;
+    color: var(--green);
 }
 
-.fa-arrow-down {
+// .fa-arrow-down {
+//     position: absolute;
+//     bottom: 0;
+//     left: 50%;
+//     font-size: 24px;
+//     padding-bottom: 10px;
+//     z-index: 20;
+//     animation: arrow infinite 2s 0 0 up fill-mode;
+// }
+
+// .fa-arrow-down:hover {
+//     color: var(--green);
+//     padding-bottom: 20px;
+// }
+
+.content-arrow {
     position: absolute;
-    bottom: 0;
     left: 50%;
-    font-size: 24px;
-    padding-bottom: 10px;
-    z-index: 20;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+    z-index: 90;
 }
 
-.fa-arrow-down:hover {
-    color: #a2ac6e;
-    padding-bottom: 20px;
+.arrow-text {
+    position: absolute;
+    left: -10%;
+    bottom: 100%;
+    margin-bottom: 10px;
+    color: var(--blue);
 }
+  
+  /* Arrow & Hover Animation */
+#more-arrows {
+    width: 75px;
+    height: 65px;
+    cursor: pointer;
+    &:hover {
+      polygon {
+        fill:  var(--green-light);
+        transition: all .2s ease-out;
+        &.arrow-bottom {
+          transform: translateY(-18px);
+        }
+        &.arrow-top {
+          transform: translateY(18px);
+        }
+      }
+    }
+}
+  
+polygon {
+    fill: var(--blue);
+    transition: all .2s ease-out;
+    &.arrow-middle {
+        opacity: 0.75;
+      }
+      &.arrow-top {
+        opacity: 0.5
+      }
+  }
 
 @media (min-width: 720px) {
 
@@ -87,7 +134,7 @@
         bottom: 0;
         width: 100%;
         height: 50px;
-        background: linear-gradient(to top,  #cac8b0, transparent);
+        background: linear-gradient(to top,  var(--green-light), transparent);
         z-index: 10;
     }
 
@@ -104,7 +151,7 @@
     }
 
     .links-container i {
-        color: #edebd7;
+        color: var(--wheat);
     }
 }
 
@@ -142,6 +189,11 @@
 
 @keyframes blink {
     50% { border-color: transparent; }
+}
+
+@keyframes arrow {
+    from { bottom: 0 ;}
+    to {bottom: 10;}
 }
 
 

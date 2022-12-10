@@ -4,7 +4,7 @@
     justify-content: space-evenly;
     align-items: center;    
     height: 100vh;
-    color: var(--text);
+    color: var(--wheat);
     position: relative;
     z-index: 90;
 }
@@ -15,6 +15,7 @@
     background-color: rgba(0, 0, 0, 0.6);
     padding: 2%;
     text-align: center;
+    box-shadow: 10px 10px 10px 0 black;
 }
 
 .about h2 {
@@ -26,13 +27,14 @@
 .tools-container {
     display: flex;
     justify-content: center;
-    color: #edebd7;
+    color: var(--wheat);
     position: relative;
     z-index: 90;
     margin-top: 5%;
 }
 
 .tools-div {
+    box-shadow: 10px -10px 10px 0 black;
     background-color: rgba(0, 0, 0, 0.3);
     padding: 1%;
     border-radius: 10px 10px 0px 0px;  
@@ -41,7 +43,7 @@
 
 .tools-div h2 {
     text-align: center;
-    border-bottom: 1px solid #edebd7;
+    border-bottom: 1px solid var(--wheat);
 }
 
 .tool-li {
