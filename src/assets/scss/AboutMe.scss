@@ -3,8 +3,8 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;    
-    height: 91.2vh;
-    color: #edebd7;
+    height: 100vh;
+    color: var(--text);
     position: relative;
     z-index: 90;
 }
@@ -27,17 +27,16 @@
     display: flex;
     justify-content: center;
     color: #edebd7;
-    margin-bottom: 5%;
     position: relative;
     z-index: 90;
+    margin-top: 5%;
 }
 
 .tools-div {
     background-color: rgba(0, 0, 0, 0.3);
-    box-shadow: 10px 10px 10px 0 black;
     padding: 1%;
-    border-radius: 10px;  
-    width: 90%;  
+    border-radius: 10px 10px 0px 0px;  
+    width: 100%;  
 }
 
 .tools-div h2 {
@@ -61,7 +60,7 @@
     display: flex;
     flex-flow: column-reverse;
     align-items: center;
-    padding: 5%;
+    padding: 2%;
 }
 
 .language-img {
@@ -81,10 +80,6 @@
     }
 
     /* Technologies */
-
-    .tools-div {
-        width: 700px;
-    }
 
     .icons-container {
         font-size: 18px;
@@ -109,9 +104,6 @@
 
     /* Technologies */
     
-    .tools-div {
-        width: 900px;
-    }
 
     .tool-li {
         font-size: 24px;

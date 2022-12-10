@@ -1,6 +1,6 @@
 import useAos from "../hooks/useAos";
 import "../assets/scss/Navbar.scss"
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
 
@@ -12,8 +12,11 @@ const Navbar = () => {
                 <label for="toggler"><i className="fa-solid fa-bars"></i></label>
                 <div className="nav-content">
                     <ul className="nav-links">
-                        <li className="nav-li"><Link className="link-i" to="/"><i className="fa-solid fa-house"></i></Link></li>
-                        <li className="nav-li"><Link className="link" to="/about">Sobre mi / Contacto </Link></li>
+                        <li className="nav-li"><Link className="link-i" to="home" spy={true} smooth={true} offset={50} duration={500}><i className="fa-solid fa-house"></i></Link></li>
+                        <li className="nav-li"><Link to="works" spy={true} smooth={true} offset={50} duration={500} className="link">Proyectos </Link></li>
+                        <li className="nav-li"><Link className="link" to="about" spy={true} smooth={true} offset={-50} duration={500}>Sobre mi </Link></li>
+                        <li className="nav-li"><Link className="link" to="about" spy={true} smooth={true} offset={50} duration={500}>Contacto </Link></li>
+                        <li className="nav-li"><Link className="link" to="technologies" spy={true} smooth={true} offset={50} duration={500}>Tecnologias</Link></li>
                     </ul>
                 </div>
             </nav>

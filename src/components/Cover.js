@@ -1,6 +1,6 @@
 import useAos from "../hooks/useAos";
 import "../assets/scss/Cover.scss";
-import { Link } from "react-router-dom";
+import {Link} from "react-scroll";
 
 const Cover = () => {
 
@@ -16,6 +16,7 @@ const Cover = () => {
                     <li><a target="_blank" rel="noreferrer" href="https://github.com/Sofia-Gutierrez"><i className="fa-brands fa-github"></i></a></li>
                     <li><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/sofia-g-gutierrez/"><i className="fa-brands fa-linkedin"></i></a></li>
                 </ul>
+                <Link to="works" spy={true} smooth={true} offset={50} duration={500}><i className="fa-solid fa-arrow-down"></i></Link>    
             </div>
         )
 }

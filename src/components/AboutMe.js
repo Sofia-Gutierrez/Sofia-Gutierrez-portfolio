@@ -2,13 +2,13 @@ import React from "react";
 import "../assets/scss/AboutMe.scss";
 import useAos from "../hooks/useAos";
 import Contact from "./Contact";
-import Technologies from "./Technologies";
 
 const AboutMe = () => {
     
     useAos();
 
         return(
+            
             <div id="about" data-aos="zoom-in" className="about">
                 <p className="about-p">
                     Soy Sofia Gutierrez, tengo 18 años y me apasiona el mundo de la tecnologia.
@@ -20,7 +20,6 @@ const AboutMe = () => {
                     <br />
                     Siempre me gusta resolver problemas y buscar soluciones.
                 </p>
-
                 <Contact />
             </div>
         )

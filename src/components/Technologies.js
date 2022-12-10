@@ -48,19 +48,18 @@ const Technologies = () => {
     ]
 
     return (
-        <div className="tools-container" data-aos="zoom-in" >
-                    <div className="tools-div">
-                        <h2>Tecnologias: </h2>
-                        <ul className="icons-container">
-                            
-                            {ContentTechnologies.map((element, index) => {
-                            return (
-                                <li className="tool-li">{element.title} <img src={element.img} className="language-img" alt="..."/></li>)
-                            })
-                            }
-                        </ul> 
-                    </div>
-                </div>
+        <div className="tools-container" id="technologies">
+            <div className="tools-div">
+                <h2>Tecnologias: </h2>
+                <ul className="icons-container">   
+                    {ContentTechnologies.map((element, index) => {
+                        return (
+                            <li className="tool-li" >{element.title}<img src={element.img} className="language-img" alt="..."/></li>)
+                        })
+                    }
+                </ul> 
+            </div>
+        </div>
       
     ) 
 }

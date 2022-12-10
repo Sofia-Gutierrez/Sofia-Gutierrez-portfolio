@@ -2,12 +2,12 @@ import "./assets/scss/App.scss";
 import { useEffect } from "react";
 import Particles from "particlesjs";
 import Navbar from "./components/Navbar";
-import Home from "./components/Home";
+import Cover from "./components/Cover";
 import Content from "./components/Content";
 import AboutMe from "./components/AboutMe";
-import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import { HashRouter , Route , Routes } from "react-router-dom";
+import Technologies from "./components/Technologies";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
 
@@ -47,16 +47,14 @@ function App() {
   });
 
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Navbar />
-      <Routes>
-        <Route path="/" exact={true} basename={process.env.PUBLIC_URL} element={<Home />} />
-        <Route path="/works" basename={process.env.PUBLIC_URL} element={<Content/>} />
-        <Route path="/contact" basename={process.env.PUBLIC_URL} element={<Contact/>} />
-        <Route path="/about" basename={process.env.PUBLIC_URL} element={<AboutMe/>} />
-      </Routes>
+      <Cover />
+      <Content />
+      <AboutMe />
+      <Technologies />
       <Footer />
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
