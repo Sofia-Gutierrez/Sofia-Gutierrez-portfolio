@@ -83,17 +83,17 @@
 .content-arrow {
     position: absolute;
     left: 50%;
-    bottom: 0;
+    bottom: -35px;
     transform: translate(-50%, -50%);
     z-index: 90;
 }
 
 .arrow-text {
     position: absolute;
-    left: -10%;
     bottom: 100%;
     margin-bottom: 10px;
     color: var(--blue);
+    font-size: 16px;
 }
   
   /* Arrow & Hover Animation */
@@ -128,16 +128,6 @@ polygon {
 
 @media (min-width: 720px) {
 
-    .cover-container::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 50px;
-        background: linear-gradient(to top,  var(--green-light), transparent);
-        z-index: 10;
-    }
-
     .content {
         margin-left: 20%;
     }
@@ -156,6 +146,16 @@ polygon {
 }
 
 @media (min-width: 1024px) {
+    
+    .cover-container::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        background: linear-gradient(to top,  var(--green-light), transparent);
+        z-index: 10;
+    }
 
     .cover-container {
         height: 100vh;
@@ -163,6 +163,10 @@ polygon {
 
     .title {
         font-size: 20px;
+    }
+
+    .arrow-text {
+        font-size: 19px;
     }
 } 
 

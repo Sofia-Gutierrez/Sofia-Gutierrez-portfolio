@@ -24,13 +24,7 @@ function App() {
             }
         },
         {
-          breakpoint: 768, 
-            options: {
-              maxParticles: 50,
-            }
-        }, 
-        {
-          breakpoint: 425,
+          breakpoint: 1000,
           options: {
             maxParticles: 10,
             connectParticles: false
