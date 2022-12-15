@@ -6,8 +6,9 @@ import js from "../assets/img/Javascript.png";
 import react from "../assets/img/react.png";
 import node from "../assets/img/Node.png";
 import git from "../assets/img/git.png";
-import express from "../assets/img/express.png";
+import express from "../assets/img/express.jpg";
 import MySQL from "../assets/img/MySQL.png";
+import Sass from "../assets/img/sass.png";
 
 
 const Technologies = () => {
@@ -28,6 +29,10 @@ const Technologies = () => {
         {
             title: "React",
             img: react
+        },
+        {
+            title: "Sass",
+            img: Sass
         },
         {
             title: "NodeJs",
