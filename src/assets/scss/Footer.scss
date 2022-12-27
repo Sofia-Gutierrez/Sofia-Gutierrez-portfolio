@@ -1,0 +1,38 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(1, 1, 1, 0.3);
+    color: var(--wheat);
+    position: relative;
+    z-index: 90;
+    border-top: var(--wheat) 1px solid;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-a , .footer-gm {
+    font-size: 20px;
+    padding: 1%;
+}
+
+.footer-a:hover  {
+    color: var(--green);
+    cursor: pointer;
+}
+
+.footer h6 {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+
+@media (min-width: 768px) {
+    .footer-links {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+}
