@@ -40,6 +40,7 @@
     width: 29ch;
     color: var(--blue);
     font-size: 14px;
+    background-color: rgba(250, 250, 250, 0.5 );
 
     animation: typing 2s steps(29), 
     blink .5s infinite step-end alternate;
@@ -103,7 +104,7 @@
     cursor: pointer;
     &:hover {
       polygon {
-        fill:  var(--green-light);
+        fill:  var(--light-green);
         transition: all .2s ease-out;
         &.arrow-bottom {
           transform: translateY(-18px);
@@ -138,6 +139,7 @@ polygon {
     
     .title {
         font-size: 18px;
+        background-color: rgba(250, 250, 250, 0.0 );
     }
 
     .links-container i {
@@ -153,7 +155,7 @@ polygon {
         bottom: 0;
         width: 100%;
         height: 50px;
-        background: linear-gradient(to top,  var(--green-light), transparent);
+        background: linear-gradient(to top,  var(--light-green), transparent);
         z-index: 10;
     }
 

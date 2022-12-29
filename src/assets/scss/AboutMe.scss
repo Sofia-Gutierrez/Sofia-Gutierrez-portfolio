@@ -10,12 +10,16 @@
 }
 
 .about-p {
-    width: 96%;
+    width: 98%;
     font-size: 14px;
     background-color: rgba(0, 0, 0, 0.6);
     padding: 2%;
     text-align: center;
     box-shadow: 10px 10px 10px 0 black;
+}
+
+.about-phrase {
+    color: var(--green);
 }
 
 .about h2 {
@@ -100,7 +104,9 @@
 @media (min-width: 1440px) {
 
     .about-p {
-        font-size: 26px;
+        padding: 1%;
+        font-size: 20px;
+        line-height: 1.4;
     }
 
     .about h2 {

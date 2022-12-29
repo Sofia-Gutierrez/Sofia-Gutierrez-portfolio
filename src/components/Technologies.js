@@ -59,7 +59,7 @@ const Technologies = () => {
                 <ul className="icons-container">   
                     {ContentTechnologies.map((element, index) => {
                         return (
-                            <li className="tool-li" >{element.title}<img src={element.img} className="language-img" alt="..."/></li>)
+                            <li className="tool-li" key={index + element.title}>{element.title}<img src={element.img} className="language-img" alt="..."/></li>)
                         })
                     }
                 </ul> 
