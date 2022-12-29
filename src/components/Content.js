@@ -12,6 +12,7 @@ const Content = () => {
             <div className="works-container" id="works"> 
                 <div className="work-container img-r" data-aos="fade-right"> 
                         <img className="work-img" src={travel} alt="travel work"/>
+                        <div className="work-background"></div>
                         <div className="work-detail">
                             <h4 className="work-title">Medellín Travel:</h4>
                             <p className="work-description">Desde nuestro sitio web ofrecemos servicios de transporte para personas recién llegados a Medellín, Colombia.
@@ -20,6 +21,7 @@ const Content = () => {
                 </div>
                 <div className="work-container img-l" data-aos="fade-right">
                         <img className="work-img" src={museum} alt="museum work"/>
+                        <div className="work-background"></div>
                         <div className="work-detail">
                             <h4 className="work-title">Museo Paleontológico:</h4>
                             <p className="work-description">
@@ -29,6 +31,7 @@ const Content = () => {
                 </div>
                 <div className="work-container img-r" data-aos="fade-right"> 
                         <img className="work-img" src={mercadoLiebre} alt="mercadoLiebre work"/>
+                        <div className="work-background"></div>
                         <div className="work-detail">
                             <h4 className="work-title">Mercado Liebre:</h4>
                             <p className="work-description">

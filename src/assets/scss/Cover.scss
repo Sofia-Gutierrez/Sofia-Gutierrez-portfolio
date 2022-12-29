@@ -104,7 +104,7 @@
     cursor: pointer;
     &:hover {
       polygon {
-        fill:  var(--green-light);
+        fill:  var(--light-green);
         transition: all .2s ease-out;
         &.arrow-bottom {
           transform: translateY(-18px);
@@ -155,7 +155,7 @@ polygon {
         bottom: 0;
         width: 100%;
         height: 50px;
-        background: linear-gradient(to top,  var(--green-light), transparent);
+        background: linear-gradient(to top,  var(--light-green), transparent);
         z-index: 10;
     }
 
