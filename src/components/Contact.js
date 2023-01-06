@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react"
 import emailjs from "emailjs-com"
-import AOS from 'aos';
 import "../assets/scss/Contact.scss"
-import AboutMe from "./AboutMe";
+import useAos from "../hooks/useAos";
 
 const Contact = () => {
+
+  useAos();
 
   const [name, setName] = useState({
     value: "",
@@ -19,27 +20,22 @@ const Contact = () => {
     msgMessage: ""
   });
 
-
-  useEffect(() => {
-
-    AOS.init({
-      duration : 2000
-    });
-
+  useEffect (() => {
+  
     let name = document.getElementById("name");
     let email = document.getElementById("email");
     let message = document.getElementById("message");
+    let btn = document.getElementById("btn-contact");
+    let emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
 
-    const btn = document.getElementById("btn-contact");
-
-    if(name.value.length >= 4 && email.value.length >= 4 && message.value.length >= 10) {
+    if(name.value.length >= 4 && emailRegex.test(email.value) === true && message.value.length >= 10) {
       btn.classList.remove("btn-contact-err");
       btn.classList.add("btn-contact");
       btn.disabled = false
     }
+
   })
-  
-  
+
   const handleOnBlurName = (e) => {
 
     let name = e.target.value
@@ -56,7 +52,7 @@ const Contact = () => {
 
     setName(currentValue => ({
       ...currentValue,
-      value: e.target.value,
+      name: e.target.value,
       msgName: msgName
     }))
   }
@@ -123,16 +119,17 @@ const Contact = () => {
       e.target.reset()
   };
 
+
         return(
           <div className="form-container">
             <form  onSubmit={sendEmail} className="contact-form" action="https://formsubmit.co/sofiagutierrez1845@gmail.com" method="POST" id="contact" data-aos="zoom-in">
               <legend className="legend">Contactame: <span id="okMsg"></span></legend>
               <label className="contact-label" form="name">Nombre:<span id="err-name">{name.msgName}</span></label>
-              <input className="contact-input" type="text" name="name" id="name" onBlur={handleOnBlurName} placeholder="Nombre*"/>
+              <input className="contact-input" type="text" name="name" id="name" onChange={handleOnBlurName} placeholder="Nombre*"/>
               <label className="contact-label" form="email">Correo:<span id="err-email">{email.msgEmail}</span></label>
-              <input className="contact-input" type="email" name="email" id="email" onBlur={handleOnBlurEmail} placeholder="Email*"/>
+              <input className="contact-input" type="email" name="email" id="email" onChange={handleOnBlurEmail} placeholder="Email*"/>
               <label className="contact-label" form="message">Mensaje:<span id="err-message">{message.msgMessage}</span></label>
-              <textarea className="contact-input" type="text" name="message" id="message" onBlur={handleOnBlurMessage}  placeholder="Mensaje*"/>
+              <textarea className="contact-input" type="text" name="message" id="message" onChange={handleOnBlurMessage}  placeholder="Mensaje*"/>
               <button className="btn-contact-err" id="btn-contact" disabled={true}>Enviar</button>
             </form>
           </div>

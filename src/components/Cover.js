@@ -1,3 +1,4 @@
+import React from "react";
 import useAos from "../hooks/useAos";
 import "../assets/scss/Cover.scss";
 import {Link} from "react-scroll";

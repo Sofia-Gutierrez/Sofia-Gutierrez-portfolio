@@ -1,3 +1,4 @@
+import React from "react";
 import useAos from "../hooks/useAos";
 import "../assets/scss/Navbar.scss"
 import { Link } from "react-scroll";

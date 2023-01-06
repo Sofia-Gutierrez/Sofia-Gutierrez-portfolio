@@ -1,3 +1,4 @@
+import React from "react";
 import useAos from "../hooks/useAos";
 import travel from "../assets/img/medellinTravel.jpg"
 import museum from "../assets/img/museum.jpg"
