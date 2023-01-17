@@ -1,11 +1,3 @@
-.form-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 90;
-    width: 90%;
-}
 
 .contact-form {
     display: flex;
@@ -85,9 +77,6 @@
 
 @media (min-width: 768px) {
 
-    .form-container {
-        margin: 50px 0;
-    }
 
     .legend {
         font-size: 20px;

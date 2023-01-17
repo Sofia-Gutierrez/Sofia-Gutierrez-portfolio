@@ -9,6 +9,7 @@ import git from "../assets/img/git.png";
 import express from "../assets/img/express.jpg";
 import MySQL from "../assets/img/MySQL.png";
 import Sass from "../assets/img/sass.png";
+import jQuery from "../assets/img/jQuery.png"
 
 
 const Technologies = () => {
@@ -49,6 +50,10 @@ const Technologies = () => {
         {
             title: "MySQL",
             img: MySQL
+        },
+        {
+            title: "jQuery",
+            img: jQuery
         },
     ]
 

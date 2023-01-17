@@ -11,7 +11,7 @@ const AboutMe = () => {
             
             <div id="about" data-aos="zoom-in" className="about">
                 <p className="about-p">
-                    Soy Sofia Gutierrez, tengo 18 años, programadora web orientada al Front-end, dedicada, ordenada y práctica. Me apasiona el mundo de la tecnologia y me interesa aprender nuevas herramientas y lenguajes.
+                    Soy Sofia Gutierrez, tengo 18 años, programadora web orientada al Front-end, dedicada y organizada. Me apasiona el mundo de la tecnologia y me interesa aprender nuevas herramientas y lenguajes.
                     <br/>
                     Quiero superarme cada dia y dar lo mejor de mi para obtener los mejores resultados.
                     Me gusta el diseño minimalista, crear paginas limpias y con buen funcionamiento.
