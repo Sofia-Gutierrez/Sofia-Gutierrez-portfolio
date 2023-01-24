@@ -12,19 +12,19 @@ const Content = () => {
 
         return(
             <div className="works-container" id="works"> 
-             <div className="work-container" data-aos="fade-right"> 
+                <div className="work-container" data-aos="fade-right"> 
+                    <a href="https://podas-gutierrez.vercel.app/">
                         <img className="work-img" src={podasGutierrez} alt="travel work"/>
                         <div className="work-background"></div>
                         <div className="work-detail">
-                            <a href="https://podas-gutierrez.vercel.app/">
                                 <h4 className="work-title">Podas Gutierrez:</h4>
                                 <p className="work-description">
                                     Esta pagína fue realizada en React con HTML, SCSS y Boostrap.
                                     <br/>
                                     El responsive realizado con la metodología de trabajo Mobile First haciendola 100% resposive. 
                                 </p>
-                            </a>
                         </div>
+                    </a>
                 </div>
                 <div className="work-container" data-aos="fade-right"> 
                         <img className="work-img" src={travel} alt="travel work"/>
@@ -33,8 +33,6 @@ const Content = () => {
                             <h4 className="work-title">Medellín Travel:</h4>
                             <p className="work-description">
                                 Esta pagina fue un proyecto realizado en Digital House es un E-Commerce.
-                                <br/>
-                                Es 100% responsive utilizando la metodología de trabajo Mobile First. 
                                 <br/>
                                 Se trabajo con HTML, CSS y Js Front para el Frontend, MySQLy y Js para el Backend. Cuenta con middlewares y controladores para sus distintas funcionalidades y tiene validaciones con js para el front y el backend.
                             </p>

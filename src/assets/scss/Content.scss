@@ -81,37 +81,40 @@
         transition: all 1.5s cubic-bezier(0.075, 0.82, 0.8, 1);
         animation-duration: 1.5s;
         animation-fill-mode: forwards;
+        font-family: 'Fira Sans', sans-serif;
     }
 
     .work-title {
         top: 20%; 
-        left: 2%;
+        left: 35%;
         background-color: transparent;
         overflow: hidden; 
         font-size: 26px;
         animation-name: transition-title;
+        font-weight: 900;
     }
 
     .work-container:hover .work-title {
         top: 30%; 
-        left: 2%;
         display: block;
         opacity: 1;
     }
 
     .work-description {   
         top: 60%; 
-        left: 2%; 
+        left: 1%;
         display: block;
         overflow: hidden; 
         font-size: 18px;
         line-height: 1.5;
+        font-style: italic;
         animation-name: transition-detail;
+        margin: 1%;
+        font-weight: 400;
     }
     
     .work-container:hover .work-description {
         top: 45%; 
-        left: 2%;
         display: block;
         opacity: 1;
     }
