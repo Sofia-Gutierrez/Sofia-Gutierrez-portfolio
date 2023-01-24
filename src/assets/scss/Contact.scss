@@ -6,10 +6,10 @@
     width: 90%;
     height: fit-content;
     padding: 2%;
-    border-radius: 10px;
+    border-radius: 0 0 10px 10px;
     color: var(--wheat);
-    background-color: rgba(0, 0, 0, 0.3);
-    box-shadow: 10px 10px 10px 0 black;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 25px 0 black;
 }
 
 .legend {

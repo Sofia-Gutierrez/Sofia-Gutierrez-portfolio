@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from "react"
 import emailjs from "emailjs-com"
 import "../assets/scss/Contact.scss"
-import useAos from "../hooks/useAos";
 
 const Contact = () => {
 
-  useAos();
 
   const [name, setName] = useState({
     value: "",
@@ -121,7 +119,7 @@ const Contact = () => {
 
 
         return(
-            <form  onSubmit={sendEmail} className="contact-form" action="https://formsubmit.co/sofiagutierrez1845@gmail.com" method="POST" id="contact" data-aos="zoom-in">
+            <form  onSubmit={sendEmail} className="contact-form" action="https://formsubmit.co/sofiagutierrez1845@gmail.com" method="POST" id="contact">
               <legend className="legend">Contactame: <span id="okMsg"></span></legend>
               <label className="contact-label" form="name">Nombre:<span id="err-name">{name.msgName}</span></label>
               <input className="contact-input" type="text" name="name" id="name" onChange={handleOnBlurName} placeholder="Nombre*"/>

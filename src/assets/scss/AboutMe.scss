@@ -1,22 +1,22 @@
 .about {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;    
-    height: 100vh;
     color: var(--wheat);
     position: relative;
     z-index: 90;
 }
 
 .about-p {
-    width: 98%;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.5);
     font-size: 14px;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 2%;
-    text-align: center;
-    box-shadow: 10px 10px 10px 0 black;
+    box-shadow: 10px 0 25px 0 black;
     line-height: 1.5;
+    padding: 2%;
+    border-bottom: 1px solid var(--wheat);
+    border-radius: 10px 10px 0 0;
+
 }
 
 .about-phrase {
@@ -80,6 +80,7 @@
 
     .about-p {
         font-size: 18px;
+        text-align: center;
     }
 
     .about h2 {
@@ -104,8 +105,12 @@
 
 @media (min-width: 1440px) {
 
+    .about {
+        height: 100vh;
+    }
+
     .about-p {
-        padding: 1%;
+        width: 50%;
         font-size: 20px;
         line-height: 1.4;
     }
