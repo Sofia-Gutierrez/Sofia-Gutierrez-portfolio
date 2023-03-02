@@ -9,6 +9,7 @@ html, body {
     text-decoration: none;
     font-family: 'Fira Sans', sans-serif;
     font-style: italic;
+    -webkit-tap-highlight-color: transparent;
 }
 
 body::-webkit-scrollbar {
