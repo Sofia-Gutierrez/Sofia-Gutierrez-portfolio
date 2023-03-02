@@ -8,7 +8,6 @@
     padding: 2%;
     border-radius: 0 0 10px 10px;
     color: var(--wheat);
-    background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 10px 10px 25px 0 black;
 }
 
@@ -77,6 +76,9 @@
 
 @media (min-width: 768px) {
 
+    .contact-form {
+        width: 70%;
+    }
 
     .legend {
         font-size: 20px;
@@ -103,7 +105,12 @@
 }
 
 @media (min-width: 1440px) {
+    
     .contact-form {
-        width: 50%;
+        width: 60%;
+        height: 425px;
+        border-radius: 0 10px 10px 0;
+        box-shadow: none;
+        background-color: rgba(0, 0, 0, 0.2);
     }
 }

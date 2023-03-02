@@ -1,138 +1,82 @@
-.about {
+.about-contact-container{
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
     color: var(--wheat);
     position: relative;
     z-index: 90;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10% 0 30% 0;
+}
+
+.about-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 95%;
 }
 
 .about-p {
     width: 90%;
-    background-color: rgba(0, 0, 0, 0.5);
     font-size: 14px;
     box-shadow: 10px 0 25px 0 black;
     line-height: 1.5;
     padding: 2%;
     border-bottom: 1px solid var(--wheat);
     border-radius: 10px 10px 0 0;
-
 }
 
 .about-phrase {
     color: var(--green);
 }
 
-.about h2 {
-    font-size: 20px;
-}
-
-/* Technologies */
-
-.tools-container {
-    display: flex;
-    justify-content: center;
-    color: var(--wheat);
-    position: relative;
-    z-index: 90;
-    margin-top: 5%;
-}
-
-.tools-div {
-    box-shadow: 10px -10px 10px 0 black;
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 1%;
-    border-radius: 10px 10px 0px 0px;  
-    width: 100%;  
-}
-
-.tools-div h2 {
-    text-align: center;
-    border-bottom: 1px solid var(--wheat);
-}
-
-.tool-li {
-    font-size: 18px;
-}
-
-.icons-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    font-size: 12px;
-    padding-left: 0;
-}
-
-.icons-container li {
-    display: flex;
-    flex-flow: column-reverse;
-    align-items: center;
-    padding: 2%;
-}
-
-.language-img {
-    width: 40px;
-    height: 30px;
-}
-
 
 @media (min-width: 768px) {
+
+    .about-contact-container {
+        padding: 15% 0 15% 0;
+    }
 
     .about-p {
         font-size: 18px;
         text-align: center;
+        width: 70%;
     }
 
-    .about h2 {
-        font-size: 24px;
-    }
-
-    /* Technologies */
-    .tools-container {
-        margin-top: 100px;
-    }
-
-    .icons-container {
-        font-size: 18px;
-        flex-direction: row;
-    }
-
-    .language-img {
-        width: 40px;
-        height: 40px;
-    }
 }
+
 
 @media (min-width: 1440px) {
 
-    .about {
+    .about-contact-container {
+        padding: 0;
+        justify-content: center;
         height: 100vh;
+        box-shadow: 0px -15px 15px 0px black;
+    }
+
+    .about-contact {
+        flex-direction: row;
+        justify-content: center;
+        width: 60%;
+        box-shadow: 15px 15px 15px 0px black;
+        max-height: 500px;
     }
 
     .about-p {
-        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 1.5;
+        padding: 2%;
+        box-shadow: none;
+        border-bottom: none;
+        border-radius: 10px 0 0 10px;
+        background-color: rgba(0, 0, 0, 0.5);
         font-size: 20px;
         line-height: 1.4;
-    }
-
-    .about h2 {
-        font-size: 30px;
-    }
-
-    /* Technologies */
-    
-
-    .tool-li {
-        font-size: 24px;
-    }
-
-    .icons-container {
-        font-size: 30px;
-    }
-
-    .language-img {
-        width: 65px;
-        height: 60px;
+        width: 40%;
+        height: 425px;
     }
 
 }

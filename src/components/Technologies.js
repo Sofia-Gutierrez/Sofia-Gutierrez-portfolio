@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/scss/AboutMe.scss";
+import "../assets/scss/Technologies.scss";
 import html from "../assets/img/html.png";
 import css from "../assets/img/css.png";
 import js from "../assets/img/Javascript.png";
