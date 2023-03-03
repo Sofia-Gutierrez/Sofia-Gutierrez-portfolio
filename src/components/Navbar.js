@@ -5,13 +5,24 @@ import { Link } from "react-scroll";
 
 const Navbar = () => {
 
+    const handleClickBtn = () => {
+        const btn = document.getElementById("nav-btn");
+        const navContent = document.getElementById("nav-content");
+
+        btn.classList.toggle("open");
+        navContent.classList.toggle("open");
+    }
+
     useAos();
 
     return(
         <nav className="nav" data-aos="fade-down">  
-            <input type="checkbox" id="toggler" />
-            <label for="toggler"><i className="fa-solid fa-bars"></i></label>
-            <div className="nav-content">
+            <div id="nav-btn" onClick={handleClickBtn}>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div className="nav-content" id="nav-content">
                 <ul className="nav-links">
                     <li className="nav-li"><Link className="link" to="home" spy={true} smooth={true} offset={-50} duration={500}>Inicio</Link></li>
                     <li className="nav-li"><Link to="works" spy={true} smooth={true} offset={50} duration={500} className="link">Proyectos</Link></li>
