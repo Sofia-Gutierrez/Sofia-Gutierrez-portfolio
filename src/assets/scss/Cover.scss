@@ -125,7 +125,7 @@ polygon {
       &.arrow-top {
         opacity: 0.5
       }
-  }
+}
 
 @media (min-width: 720px) {
 
@@ -149,15 +149,15 @@ polygon {
 
 @media (min-width: 1024px) {
     
-    .cover-container::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 50px;
-        background: linear-gradient(to top,  var(--light-green), transparent);
-        z-index: 10;
-    }
+    // .cover-container::before {
+    //     content: "";
+    //     position: absolute;
+    //     bottom: 0;
+    //     width: 100%;
+    //     height: 50px;
+    //     background: linear-gradient(to top,  black, transparent);
+    //     z-index: 10;
+    // }
 
     .cover-container {
         height: 100vh;
