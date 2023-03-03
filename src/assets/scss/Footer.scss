@@ -6,6 +6,7 @@
     position: relative;
     z-index: 90;
     border-top: var(--wheat) 1px solid;
+    padding: 1%;
 }
 
 .footer-links {
@@ -15,7 +16,7 @@
 
 .footer-a , .footer-gm {
     font-size: 20px;
-    padding: 1%;
+    padding: 2%;
 }
 
 .footer-a:hover  {
@@ -30,9 +31,16 @@
 
 
 @media (min-width: 768px) {
+
     .footer-links {
         flex-direction: row;
         justify-content: center;
     }
     
+}
+
+@media (min-width: 1440px) {
+    .footer {
+        padding: 0;
+    }
 }

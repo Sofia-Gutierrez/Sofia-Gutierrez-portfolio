@@ -12,7 +12,7 @@
 .tools-div {
     box-shadow: 10px -10px 10px 0 black;
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 1%;
+    padding: 2%;
     border-radius: 10px 10px 0px 0px;  
     width: 100%;  
 }
@@ -32,6 +32,7 @@
     flex-wrap: wrap;
     font-size: 12px;
     padding-left: 0;
+    padding: 1%;
 }
 
 .icons-container li {
@@ -48,6 +49,10 @@
 
 @media (min-width: 768px) {
     /* Technologies */
+
+    .tools-div {
+        padding: 1%;
+    }
 
     .icons-container {
         font-size: 18px;
