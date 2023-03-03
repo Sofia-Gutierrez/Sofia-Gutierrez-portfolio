@@ -4,7 +4,6 @@
     align-items: center;
     padding: 25% 0 15% 0;
     color: var(--wheat);
-    box-shadow: 0 -15px 30px 0 rgba(0, 0, 0, 7);
 }
 
 .work-container {
@@ -51,6 +50,7 @@
 
     .works-container {
         padding: 10% 0 15%;
+        box-shadow: 0 -15px 30px 0 rgba(0, 0, 0, 7);
     }
 
     .work-container{
