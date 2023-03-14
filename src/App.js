@@ -20,9 +20,15 @@ function App() {
         {
           breakpoint: 2560, 
             options: {
-              maxParticles: 100,
-              connectParticles: true
+              maxParticles: 50,
             }
+        },
+        {
+          breakpoint: 1430,
+          options: {
+            maxParticles: 20,
+            connectParticles: true
+          }
         },
         {
           breakpoint: 1000,

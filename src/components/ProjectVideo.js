@@ -9,7 +9,7 @@ function ProyectVideo( { title, video, link } ) {
         <div className="container-proyect-video" data-aos="zoom-in">
             <h4 className="proyect-title">{title}</h4>
             <video className="proyect-video" src={video} controls muted />
-            <a className="proyect-video-link">Codigo: {link}</a>
+            <a className="proyect-video-link" href=" ">Codigo: {link}</a>
         </div>
     )
 }
