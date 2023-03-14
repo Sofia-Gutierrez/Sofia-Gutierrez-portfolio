@@ -34,12 +34,36 @@
     border: 2px solid white;
 }
 
-.proyect-video-link {
-    font-size: 12px;
-    cursor: pointer;
-    font-family: Roboto, sans-serif;
+.container-proyect-video-links {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
 }
 
+.proyect-video-link {
+    font-size: 14px;
+    cursor: pointer;
+    font-family: Roboto, sans-serif;
+    padding: 1%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.proyect-video-link.link-git {
+    color: var(--wheat);
+    border: 2px solid wheat ;
+}   
+
+.proyect-video-link.link-web {
+    color: var(--green);
+    border: 2px solid var(--green);
+}   
+
+.proyect-video-link:hover {
+    background-color: var(--light-green);
+    color: var(--blue);
+}
 
 
 @media (min-width: 768px) {
@@ -49,6 +73,7 @@
     }
 
     .proyect-video-link {
-        font-size: 15px;
+        font-size: 16px;
     }
 }
+

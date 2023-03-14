@@ -25,10 +25,24 @@
 
 .work-title {
     position: absolute;
-    bottom: 6px;
+    bottom: 34px;
     left: 0;
     background-color: #001736d5;
     padding: 3px 2px;
+}
+
+.work-link-git {
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: Roboto, sans-serif;
+    border: 2px solid var(--green);
+}
+
+
+.work-link-git:hover {
+    color: var(--blue);
+    background-color: var(--light-green);
 }
 
 @media (min-width:425px) {
@@ -76,7 +90,9 @@
         user-select: none;
     }
 
-    .work-title, .work-description {
+    .work-title, 
+    .work-description,
+    .work-link-git {
         opacity: 0;
         position: absolute;
         transition: all 1.5s cubic-bezier(0.075, 0.82, 0.8, 1);
@@ -118,6 +134,19 @@
         top: 45%; 
         display: block;
         opacity: 1;
+    }
+
+
+    .work-link-git {
+        color: var(--green);
+        font-size: 18px;
+        left: 40%;
+        bottom: 5%;
+    }
+
+    .work-container:hover .work-link-git {
+        opacity: 1;
+        bottom: 10%;
     }
 
 }

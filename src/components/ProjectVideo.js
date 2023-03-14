@@ -1,7 +1,7 @@
 import React from "react";
 import useAos from "../hooks/useAos";
 
-function ProyectVideo( { title, video, link } ) {
+function ProyectVideo( { title, video, linkGit, linkWeb } ) {
 
     useAos();
 
@@ -9,7 +9,10 @@ function ProyectVideo( { title, video, link } ) {
         <div className="container-proyect-video" data-aos="zoom-in">
             <h4 className="proyect-title">{title}</h4>
             <video className="proyect-video" src={video} controls muted />
-            <a className="proyect-video-link" href=" ">Codigo: {link}</a>
+            <div className="container-proyect-video-links">
+                <a className="proyect-video-link link-git" href={linkGit} target="_blank">Codigo en GitHub </a>
+                <a className="proyect-video-link link-web" href={linkWeb} target="_blank">Ir a la Web</a>
+            </div>
         </div>
     )
 }
