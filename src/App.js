@@ -8,6 +8,7 @@ import AboutMe from "./components/AboutMe";
 import Footer from "./components/Footer";
 import Technologies from "./components/Technologies";
 import { BrowserRouter } from "react-router-dom";
+import Proyects from "./components/Projects";
 
 function App() {
 
@@ -31,7 +32,7 @@ function App() {
           }
         }, 
         {
-          breakpoint: 320,
+          breakpoint: 700,
           options: {
             maxParticles: 0
           }
@@ -45,6 +46,7 @@ function App() {
       <Navbar />
       <Cover />
       <Content />
+      <Proyects />
       <AboutMe />
       <Technologies />
       <Footer />
