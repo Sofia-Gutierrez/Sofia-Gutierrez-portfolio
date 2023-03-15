@@ -8,13 +8,13 @@ function Work({ title, description, img, alt, link, git }) {
 
     return(
         <div className="work-container" data-aos="fade-right"> 
-            <a href={link} target="_blank">
+            <a href={link} target="_blank" rel="noopener noreferrer">
                 <img className="work-img" src={img} alt={alt} />
                 <div className="work-background"></div>
                 <div className="work-detail">
                     <h4 className="work-title">{title}</h4>
                     <p className="work-description">{description}</p>
-                    <a href={git} className="work-link-git" target="_blank">Ver Codigo en GitHub</a>
+                    <a href={git} className="work-link-git" target="_blank" rel="noopener noreferrer">Ver Codigo en GitHub</a>
                 </div>
             </a>
          </div>

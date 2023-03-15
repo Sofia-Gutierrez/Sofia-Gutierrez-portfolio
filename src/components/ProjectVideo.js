@@ -10,8 +10,8 @@ function ProyectVideo( { title, video, linkGit, linkWeb } ) {
             <h4 className="proyect-title">{title}</h4>
             <video className="proyect-video" src={video} controls muted />
             <div className="container-proyect-video-links">
-                <a className="proyect-video-link link-git" href={linkGit} target="_blank">Codigo en GitHub </a>
-                <a className="proyect-video-link link-web" href={linkWeb} target="_blank">Ir a la Web</a>
+                <a className="proyect-video-link link-git" href={linkGit} target="_blank" rel="noopener noreferrer">Codigo en GitHub </a>
+                <a className="proyect-video-link link-web" href={linkWeb} target="_blank" rel="noopener noreferrer">Ir a la Web</a>
             </div>
         </div>
     )
