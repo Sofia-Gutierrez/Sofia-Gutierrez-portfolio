@@ -1,14 +1,20 @@
-import "./assets/scss/App.scss";
-import { useEffect } from "react";
-import Particles from "particlesjs";
-import Navbar from "./components/Navbar";
-import Cover from "./components/Cover";
-import Content from "./components/Content";
-import AboutMe from "./components/AboutMe";
-import Footer from "./components/Footer";
-import Technologies from "./components/Technologies";
+import React, { lazy, Suspense,useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
-import Proyects from "./components/Projects";
+import Particles from "particlesjs";
+
+import "./assets/scss/App.scss";
+
+import Navbar from "./components/Navbar";
+import Loading from "./components/Loading";
+
+const Cover = lazy(() => import("./components/Cover"));
+const Content = lazy(() => import("./components/Content"));
+const Projects = lazy(() => import("./components/Projects"));
+const AboutMe = lazy(() => import("./components/AboutMe"));
+const Technologies = lazy(() => import("./components/Technologies"));
+const Footer = lazy(() => import("./components/Footer"));
+
+
 
 function App() {
 
@@ -51,12 +57,15 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
-      <Cover />
-      <Content />
-      <Proyects />
-      <AboutMe />
-      <Technologies />
-      <Footer />
+      <Suspense fallback={<Loading />}> 
+        <Cover />
+        <Content />
+        <Projects />
+        <AboutMe />
+        <Technologies />
+        <Footer />
+       </Suspense> 
+       
     </BrowserRouter>
   );
 }
