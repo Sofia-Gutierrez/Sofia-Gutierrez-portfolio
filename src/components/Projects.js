@@ -14,7 +14,7 @@ function Proyects() {
         <div className="container-proyects" >
           <ProyectImg title="App del Clima:" img={weatherApp} linkGit="https://github.com/Sofia-Gutierrez/Weather-App"  linkWeb="https://weather-app-gs.vercel.app/" />
           <ProyectImg title="Citas aleatorias:" img={randomQuotes} linkGit="https://github.com/Sofia-Gutierrez/random-quotes-freeCodeCamp"  linkWeb="https://random-quotes-freecodecamp.vercel.app/" />
-          <ProyectVideo title="Calculadora:" video={calculator} linkGit="https://github.com/Sofia-Gutierrez/calculator-freeCodeCamp"  linkWeb="https://sofia-gutierrez-calculator.vercel.app/" />
+          <ProyectVideo title="Calculadora:" video={calculator} linkGit="https://github.com/Sofia-Gutierrez/calculator-js"  linkWeb="https://calculator-js-chi.vercel.app/" />
           <ProyectVideo title="Lista de Tareas:" video={taskList} linkGit="https://github.com/Sofia-Gutierrez/task-list-freeCodeCamp" linkWeb="https://sofia-gutierrez-task-list.vercel.app/" />
           <ProyectVideo title="Contador De Clicks:" video={clickCounter} linkGit="https://github.com/Sofia-Gutierrez/counter-click-freeCodeCamp" linkWeb="https://counter-click-freecodecamp.vercel.app/" />
         </div>
