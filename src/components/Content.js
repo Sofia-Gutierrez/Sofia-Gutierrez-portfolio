@@ -37,7 +37,7 @@ const Content = () => {
             img: mercadoLiebre,
             title: "Mercado Liebre",
             description: "Proyecto realizado en Digital House con HTML y CSS para trabajar el frontend, aplicando buenas practicas para hacer un sitio responsive, con Mobile First. Es un e-commerce partiendo de Mercado Libre como ejemplo.",
-            link: "",
+            link: "https://mercado-liebre-gs-production.up.railway.app/",
             alt: "Mercado Liebre",
             git: "https://github.com/Sofia-Gutierrez/Mercado-Liebre-GS"
         },
