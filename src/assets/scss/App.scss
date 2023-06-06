@@ -20,12 +20,11 @@ a {
     all: unset;
 }
 
+
+
 body {
    // background: linear-gradient(to bottom,  #cac8b0, #6e82ac);
     background-image: url("../img/workspace.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 .background {
@@ -37,6 +36,15 @@ body {
     z-index: 0;
 }
 
+
+@media (min-width: 768px) {
+    body {
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-attachment: fixed;
+     }
+}
+
 :root {
     --green: #a2ac6e;
     --light-green: #cac8b0;
@@ -45,4 +53,4 @@ body {
     --transparent-blue: #001736a1;
     --lime: #adca6bab;
     --cyan: #53a5b4bb;
-  }
+}
