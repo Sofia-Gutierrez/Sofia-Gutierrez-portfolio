@@ -5,13 +5,15 @@ import ProyectImg from "./ProjectImg";
 import clickCounter from "../assets/video/click-counter2.mp4";
 import taskList from "../assets/video/task-list2.mp4";
 import calculator from "../assets/video/calculator2.mp4";
-import randomQuotes from "../assets/img/random-quotes.jpg"
-import weatherApp from "../assets/img/weather-app.jpg"
+import randomQuotes from "../assets/img/random-quotes.jpg";
+import weatherApp from "../assets/img/weather-app.jpg";
+import markdown from "../assets/img/markdown.jpg";
 
 function Proyects() {
 
     return (
         <div className="container-proyects" >
+          <ProyectImg title="Previsualizador de Markdown:" img={markdown} linkGit="https://github.com/Sofia-Gutierrez/markdown-previewer"  linkWeb="https://sofia-gutierrez-markdown-previewer-gs.vercel.app/" />
           <ProyectImg title="App del Clima:" img={weatherApp} linkGit="https://github.com/Sofia-Gutierrez/Weather-App"  linkWeb="https://weather-app-gs.vercel.app/" />
           <ProyectImg title="Citas aleatorias:" img={randomQuotes} linkGit="https://github.com/Sofia-Gutierrez/random-quotes-freeCodeCamp"  linkWeb="https://random-quotes-freecodecamp.vercel.app/" />
           <ProyectVideo title="Calculadora:" video={calculator} linkGit="https://github.com/Sofia-Gutierrez/calculator-js"  linkWeb="https://calculator-js-chi.vercel.app/" />
